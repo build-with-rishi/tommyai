@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Tommy",
+  "description": "An intelligent, local-first notification assistant that silences noise and surfaces important alerts using AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_unified_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|top"
+    android:background="@android:color/transparent"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+
+    <!-- Box 1 (Top): Telemetry Data Box (Screen to Screen) -->
+    <LinearLayout
+        android:id="@+id/widget_telemetry_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/widget_surface_shape"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <!-- Stat 1: Escaped Alerts -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚠️"
+                android:textSize="14sp"
+                android:textColor="@color/google_red"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/widget_stats_escaped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Escaped"
+                android:textColor="@color/google_red"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <FrameLayout
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:background="#2C2E35"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" />
+
+        <!-- Stat 2: Muted Streams -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✓"
+                android:textSize="14sp"
+                android:textColor="@color/google_green"
+                android:textStyle="bold"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/widget_stats_muted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 Muted"
+                android:textColor="@color/google_green"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Box 2 (Bottom): Action Intent Box (Screen to Screen) located 20dp below -->
+    <LinearLayout
+        android:id="@+id/widget_intent_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/widget_surface_shape"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 Action:"
+            android:textColor="@color/google_yellow"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="6dp" />
+
+        <!-- Content Body (Dynamic text describing current action items) -->
+        <TextView
+            android:id="@+id/widget_registry_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="(0) 0 pending intent items. Logs clear."
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:maxLines="12"
+            android:scrollbars="vertical"
+            android:ellipsize="end"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Vertical Divider to separate refresh item -->
+        <FrameLayout
+            android:layout_width="1dp"
+            android:layout_height="24dp"
+            android:background="#2C2E35"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Refresh Button Click Target Area -->
+        <TextView
+            android:id="@+id/widget_btn_refresh"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:text="🔄"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

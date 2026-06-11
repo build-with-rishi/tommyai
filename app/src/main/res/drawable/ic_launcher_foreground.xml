@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Subtle AI Radar Halo Circles in the background -->
+    <path
+        android:strokeColor="#1E88E5"
+        android:strokeWidth="0.8"
+        android:strokeAlpha="0.35"
+        android:pathData="M54,54m-42,0a42,42 0 1,1 84,0a42,42 0 1,1 -84,0" />
+    <path
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="0.5"
+        android:strokeAlpha="0.2"
+        android:strokeLineJoin="round"
+        android:pathData="M54,54m-28,0a28,28 0 1,1 56,0a28,28 0 1,1 -56,0" />
+
+    <!-- Cute Drooping Ears (Drawn behind the head) -->
+    <!-- Left Ear -->
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M 28,38 C 12,38 10,72 24,76 C 29,78 34,70 34,54 Z" />
+    <!-- Right Ear -->
+    <path
+        android:fillColor="#E65100"
+        android:pathData="M 80,38 C 96,38 98,72 84,76 C 79,78 74,70 74,54 Z" />
+
+    <!-- Inner Ear Accents -->
+    <!-- Left Inner Ear -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M 27,42 C 16,42 16,68 24,70 C 27,71 30,66 30,54 Z" />
+    <!-- Right Inner Ear -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M 81,42 C 92,42 92,68 84,70 C 81,71 78,66 78,54 Z" />
+
+    <!-- Dog Main Head / Face Base Shape (Friendly Round/Square) -->
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M 32,38
+                 C 24,42 22,64 34,80
+                 C 40,88 68,88 74,80
+                 C 86,64 84,42 76,38
+                 Z" />
+
+    <!-- Head Top Accent Patch/Cap (Visual style contrast) -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M 32,38 C 42,32 66,32 76,38 C 70,44 38,44 32,38 Z" />
+
+    <!-- Light Warm Snout/Muzzle Container -->
+    <path
+        android:fillColor="#FFF8E1"
+        android:pathData="M 54,62 
+                 C 42,62 38,72 38,78 
+                 C 38,84 44,88 54,88 
+                 C 64,88 70,84 70,78 
+                 C 70,72 66,62 54,62 
+                 Z" />
+
+    <!-- Clever Little Pink Tongue -->
+    <path
+        android:fillColor="#FF8A80"
+        android:pathData="M 51,80 H 57 C 57,84 51,84 51,80 Z" />
+
+    <!-- Deep Charcoal Dog Nose -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M 54,66 
+                 C 50,66 48,68 48,70 
+                 C 48,72 51,73 54,73 
+                 C 57,73 60,72 60,70 
+                 C 60,68 58,66 54,66 
+                 Z" />
+
+    <!-- Smiling Mouth Line -->
+    <path
+        android:strokeColor="#212121"
+        android:strokeWidth="1.8"
+        android:strokeLineCap="round"
+        android:pathData="M 54,73 V 79 C 50,79 47,76 47,75 M 54,79 C 58,79 61,76 61,75" />
+
+    <!-- Friendly Eyes (Subtle & smart, nested behind glasses) -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M 37,52 A 3.2,3.2 0 1,1 37,51.9 A 3.2,3.2 0 1,1 37,52 Z" />
+    <path
+        android:fillColor="#212121"
+        android:pathData="M 71,52 A 3.2,3.2 0 1,1 71,51.9 A 3.2,3.2 0 1,1 71,52 Z" />
+
+    <!-- Sleek Tech Glasses (Tommy's Designer Frames!) -->
+    <!-- Left Glass Rim (Gold Tech Frame) -->
+    <path
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="2.5"
+        android:strokeLineJoin="round"
+        android:pathData="M 37,52 m -11,0 a 11,11 0 1,1 22,0 a 11,11 0 1,1 -22,0" />
+    <!-- Screen/Glass reflection subtle gradient fill on lens -->
+    <path
+        android:fillColor="#00E5FF"
+        android:fillAlpha="0.12"
+        android:pathData="M 37,52 m -10,0 a 10,10 0 1,1 20,0 a 10,10 0 1,1 -20,0" />
+
+    <!-- Right Glass Rim (Gold Tech Frame) -->
+    <path
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="2.5"
+        android:strokeLineJoin="round"
+        android:pathData="M 71,52 m -11,0 a 11,11 0 1,1 22,0 a 11,11 0 1,1 -22,0" />
+    <!-- Screen/Glass reflection subtle gradient fill on lens -->
+    <path
+        android:fillColor="#00E5FF"
+        android:fillAlpha="0.12"
+        android:pathData="M 71,52 m -10,0 a 10,10 0 1,1 20,0 a 10,10 0 1,1 -20,0" />
+
+    <!-- Nose Bridge connecting glasses -->
+    <path
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="3.0"
+        android:strokeLineCap="round"
+        android:pathData="M 48,51 H 60" />
+
+    <!-- Glasses temples (Left & Right side frame bars extending out) -->
+    <path
+        android:strokeColor="#00E5FF"
+        android:strokeWidth="1.8"
+        android:pathData="M 26,52 H 18 M 82,52 H 90" />
+
+    <!-- Lens Flare / Smart Glare Reflections (Gives life and high intelligence style!) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M 32,46 L 36,50 M 66,46 L 70,50" />
+
+</vector>
